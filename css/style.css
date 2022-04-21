@@ -198,5 +198,8 @@ footer {
         transform: none;
     }
     
+    button {
+        font-size: 14px;
+    }
 
 }

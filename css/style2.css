@@ -197,6 +197,10 @@ form {
         margin-top: 50px;
     }
     
+    .soc {
+        font-size: 14px;
+    }
+    
 }
 
 @media screen and (max-device-width: 599px) {
