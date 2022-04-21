@@ -1,0 +1,194 @@
+body {
+    background: #333333;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    position: relative;
+    margin-top: 200px;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    margin-left: 680px;
+
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 55px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #b9b9b9;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+li {
+    background: #ff4800;
+    border: 0px solid black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0px 10px 0px 10px;
+    padding-top: 15px;
+    font-size: 22px;
+    transition: all 0.2s;
+}
+
+li:nth-child(3) {
+    background: #d8d8d8;
+}
+
+.barcontacts{
+    color: #333333;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+.end {
+    width: 100%;
+    border-top: 2px dashed #646464;
+    margin-top: 50px;
+}
+
+footer {
+    text-align: end;
+    color: #ff4800;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+p:nth-child(2) {
+    border-left: 2px solid #7a7878;
+    padding-left: 12% ;
+}
+
+.heading {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #a5a5a5;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9c9c9c86;
+}
+
+.social {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.soc {
+    color: #ff4800;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    vertical-align: -10px;
+    margin-right: 10px;
+}
+
+.mail {
+    font-size: 20px;
+    color: #ff4800;
+    margin-right: 10px;
+}
+
+.email {
+    color: #ff4800;
+    font-size: 18px;
+}
+
+.soc:hover {
+    text-shadow: #ff4800 0px 0px 12px;
+}
+
+.soc:active {
+    color:red;
+}
+
+.email:hover {
+    text-shadow: #ff4800 0px 0px 12px;
+}
+
+.email:active {
+    color:red;
+}
+
+@media screen and (max-device-width: 1052px) {
+    .navigation {
+        margin-left: 17px;
+        margin-top: 200px;
+        justify-content: center;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        padding-left: 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        margin-top: -100px;
+
+    }
+
+    button {
+        margin-top: 100px;
+    }
+
+    li:hover {
+        transform: none;
+    }
+    
+    .contacts {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p:nth-child(2) {
+        border-left: none;
+        padding:0;
+    }
+
+    .soc:hover {
+        text-shadow: none;
+    }
+
+    .email:hover {
+        text-shadow: none;
+    }
+}
