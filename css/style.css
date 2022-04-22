@@ -33,8 +33,6 @@ body {
     color: #b9b9b9;
 }
 
-
-
 a {
     text-decoration: none;
     color: #ffffff;
@@ -163,7 +161,6 @@ footer {
         justify-content: center;
         width:100%;
         margin-top: -100px;
-
     }
 
     .main {

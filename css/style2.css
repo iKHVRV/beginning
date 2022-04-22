@@ -178,7 +178,7 @@ form {
     }
 
     .picture:hover {
-        transform: scale(1.7);
+        transform: none;
     }
 
     li:hover {
@@ -207,6 +207,12 @@ form {
     .picture {
         width: 310px;
         height: 190px;
-        float: none;
+    }
+}
+
+@media screen and (max-device-width: 321px) {
+    .picture {
+        width: 300px;
+        height: 190px;
     }
 }
