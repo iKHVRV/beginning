@@ -152,7 +152,92 @@ form {
     display: inline-block;
 }
 
+.leftmenu {
+    display: none;
+}
+
+.leftm {
+    display: none;
+}
+
 @media screen and (max-device-width: 1052px) {
+    #bar {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        background: #303030;
+        margin: -200px 0px 0px 0px;
+        left: -254px;
+        border-right: 4px solid #00000017;
+        transition: all 0.4s;
+    }
+
+    #bar.active {
+        left: 0px;
+    }
+
+    .btn {
+        position: absolute;
+        left: 254px;
+        width: 1000%;
+        padding: 10px;
+        background: #414040;
+        border-bottom: 2px solid #00000044;
+    }
+
+    .btn:active span {
+        background: #000000;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        z-index: 1;
+        background: white;
+    }
+
+    .bar:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .leftmenu {
+        all: initial;
+        display: block;
+        margin-top: 50px;
+    }
+
+    .leftm {
+        all: initial;
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        background: #ff4800;
+        padding: 20px 0px;
+        width: 150px;
+        margin-left: 50px;
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .leftm:nth-child(1) {
+        background: #ffffff;
+    }
+
+    .btnm {
+        all: initial;
+        font-size: 22px;
+        font-family: sans-serif;
+        color:#ffffff;
+        font-weight: bolder;
+    }
+
+    .leftmenu li:nth-child(1) a{
+        color: #414040;
+    }
+
     .navigation {
         margin-left: 17px;
         margin-top: 200px;
@@ -161,6 +246,7 @@ form {
 
     li {
         font-size: 16px;
+        display: none;
     }
 
     .logo {
@@ -168,6 +254,8 @@ form {
         justify-content: center;
         width:100%;
         margin-top: -100px;
+        z-index: -1;
+        margin-left: 0px;
 
     }
 
@@ -191,6 +279,7 @@ form {
 
     .infocars {
         padding-left: 10px;
+        margin-top: -20px;
     }
 
     h1 {
