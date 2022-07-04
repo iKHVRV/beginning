@@ -199,7 +199,7 @@ form {
         margin-left: 1px;
         opacity: 0;
         z-index: 1;
-        transition: all 0.4s;
+        transition: all 0.2s;
     }
 
     .change {

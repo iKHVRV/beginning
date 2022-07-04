@@ -149,6 +149,10 @@ img {
     display: none;
 }
 
+#closeBar {
+    display: none;
+}
+
 @media screen and (max-device-width: 1052px) {
     #bar {
         width: 250px;
@@ -159,33 +163,55 @@ img {
         left: -254px;
         border-right: 4px solid #00000017;
         transition: all 0.4s;
+        z-index: 0;
     }
 
     #bar.active {
         left: 0px;
     }
 
+    #clickBtn {
+        position: fixed;
+        margin: 10px 10px;
+        z-index: 2;
+    }
+
+    #closeBar {
+        display: block;
+        position: fixed;
+        color: white;
+        margin: 10px 10px;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 80px;
+        font-weight: lighter;
+        top: -32px;
+        margin-left: 1px;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.2s;
+    }
+
+    .change {
+        opacity: 0;
+    }
+
     .btn {
         position: absolute;
         left: 254px;
         width: 1000%;
+        height: 25px;
         padding: 10px;
         background: #414040;
         border-bottom: 2px solid #00000044;
+        z-index: 0;
     }
 
-    .btn:active span {
-        background: #000000;
-    }
 
     .bar {
         display: block;
+        margin: -200px 0px 208px 0px;
         width: 30px;
         height: 3px;
-        background: white;
-        margin-bottom: 8px;
-        margin-left: 10px;
-        z-index: 1;
         background: white;
     }
 
