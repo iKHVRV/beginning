@@ -1,8 +1,17 @@
 const clickBtn = document.getElementById('clickBtn');
 const closeBar = document.getElementById('closeBar');
 const bar = document.getElementById('bar');
+const background = document.getElementById('background');
 
-clickBtn.onclick = function () {
+clickBtn.onclick = sideBar;
+background.onclick = sideBar;
+
+function sideBar() {
+    if (background.style.display == 'block') {
+        background.style.display = 'none';
+    }  else {
+        background.style.display = 'block';
+    }
     bar.classList.toggle('active');
     clickBtn.classList.toggle('change');
     if (clickBtn.className == 'change') {
@@ -13,6 +22,7 @@ clickBtn.onclick = function () {
         closeBar.style.transform = "rotate(180deg)";
     }
 }
+
 
 let counterL = 0;
 let counterC = 0;

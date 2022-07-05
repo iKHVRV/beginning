@@ -155,7 +155,21 @@ footer {
     display: none;
 }
 
+#background {
+    display:none;
+}
+
 @media screen and (max-device-width: 1052px) {
+    #background {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: #303030e3;
+        z-index: 0;
+    }
+
     #bar {
         width: 250px;
         position: fixed;
