@@ -187,7 +187,7 @@ form {
         margin: -200px 0px 0px 0px;
         left: -254px;
         border-right: 4px solid #00000017;
-        transition: all 0.2s;
+        transition: all ease 0.1s;
         z-index: 0;
     }
 
@@ -213,7 +213,7 @@ form {
         margin-left: 1px;
         opacity: 0;
         z-index: 1;
-        transition: all 0.2s;
+        transition: all ease 0.1s;
     }
 
     .change {
