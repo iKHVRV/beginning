@@ -232,7 +232,7 @@ footer {
         margin: -200px 0px 0px 0px;
         left: -254px;
         border-right: 4px solid #00000017;
-        transition: all ease 0.1s;
+        transition: ease 0.25s;
         z-index: 0;
     }
 
@@ -258,7 +258,7 @@ footer {
         margin-left: 1px;
         opacity: 0;
         z-index: 1;
-        transition: all ease 0.1s;
+        transition: ease 0.25s;
     }
 
     .change {
