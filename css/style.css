@@ -162,20 +162,35 @@ footer {
 #windowSup {
     display: none;
     position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 500px;
     height: 200px;
     border: 1px solid #ff4800;
     background: #2e2e2e;
     color: #d8d8d8;
-    margin: 170px 350px;
+    margin: auto;
     box-shadow: 4px 5px 3px 0px #00000093;
+}
+
+.key:active {
+    color: #c52626;
 }
 
 #closeWin {
     display: block;
     font-size: 40px;
     float: right;
-    margin-top: -45px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: -47px;
     cursor: pointer;
 }
 
