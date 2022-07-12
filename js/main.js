@@ -23,30 +23,39 @@ function sideBar() {
     }
 }
 
-let counterL = 0;
-let counterC = 0;
-let counterR = 0;
+let counterL = +localStorage.getItem("likes") || 0;
+let counterC = +localStorage.getItem("comments") || 0;
+let counterR = +localStorage.getItem("reposts") || 0;
+
 const like = document.getElementById('counterL');
 const comment = document.getElementById('counterC');
 const repost = document.getElementById('counterR');
+
 like.onclick = counterLike;
 comment.onclick = counterComment;
 repost.onclick = counterRepost;
 
+like.innerHTML = '♡' +' '+ counterL;
+comment.innerHTML = '⌨' +' '+ counterC;
+repost.innerHTML = '&#9166;' +' '+ counterR;
+
 function counterLike() {
     counterL++;
     like.innerHTML = '♡' +' '+ counterL;
+    localStorage.setItem("likes", counterL);
     like.style.borderColor = '#ff4800';
 }
 
 function counterComment() {
     counterC++;
     comment.innerHTML = '⌨' +' '+ counterC;
+    localStorage.setItem("comments", counterC);
     comment.style.borderColor = '#ff4800';
 }
 
 function counterRepost() {
     counterR++;
     repost.innerHTML = '&#9166;' +' '+ counterR;
+    localStorage.setItem("reposts", counterR);
     repost.style.borderColor = '#ff4800';
 }
